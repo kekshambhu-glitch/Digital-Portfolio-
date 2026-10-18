@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My AI Workspace — IMCA 2nd Year Academic & Career Hub</title>
+  <meta name="description" content="Personal AI Workspace for IMCA second-year student preparing for semester exams, Python programming, prompt engineering, and software internships." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="top-nav">
+    <div class="nav-container">
+      <a href="index.html" class="brand-group">
+        <div class="brand-icon">⚡</div>
+        <div class="brand-text">
+          <h1>My AI Workspace</h1>
+          <span>IMCA 2nd Year • AI & Career Hub</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#tools" class="active">Tools</a></li>
+          <li><a href="#prompts">Prompt Library</a></li>
+          <li><a href="#knowledge">Knowledge Base</a></li>
+          <li><a href="#projects">Projects Tracker</a></li>
+          <li><a href="portfolio.html" class="nav-portfolio-pill">Portfolio Page ↗</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <span class="badge-student">IMCA 2nd Year</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-wrapper">
+
+    <!-- Hero Header / Dashboard Overview -->
+    <section class="hero-header">
+      <div class="hero-content">
+        <div class="hero-left">
+          <h2>Personal AI Dashboard</h2>
+          <p>
+            Welcome to your integrated AI workspace. Built to streamline university exam preparation, master Python programming, engineer reusable prompt templates, and accelerate technical internship readiness.
+          </p>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-pill">
+            <span class="number" id="stat-prompts">10</span>
+            <span class="label">Ready Prompts</span>
+          </div>
+          <div class="stat-pill">
+            <span class="number" id="stat-completed">4/6</span>
+            <span class="label">Builds Done</span>
+          </div>
+          <div class="stat-pill">
+            <span class="number" id="stat-inprogress" style="color: #fbbf24;">1</span>
+            <span class="label">In Progress</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AREA 1: TOOLS -->
+    <section id="tools" class="dashboard-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge">Core Suite</span>
+          <h2 class="section-title">1. AI Tools Workspace</h2>
+          <p class="section-desc">Key generative models and execution environments configured for academic and programming workflows.</p>
+        </div>
+      </div>
+
+      <div class="tools-grid" id="tools-container">
+        <!-- Rendered dynamically by app.js with editable link fields -->
+      </div>
+    </section>
+
+    <!-- AREA 2: PROMPT LIBRARY -->
+    <section id="prompts" class="dashboard-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge">Engineering & Recall</span>
+          <h2 class="section-title">2. Prompt Library</h2>
+          <p class="section-desc">Curated, parameterized prompts for exams, numerical problem solving, Python code auditing, and career outreach.</p>
+        </div>
+      </div>
+
+      <!-- Controls: Search & Category Filters -->
+      <div class="prompts-controls">
+        <div class="search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-dim);">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="prompt-search" placeholder="Search prompts by name, category, or keyword..." />
+        </div>
+
+        <div class="category-filters">
+          <button class="filter-btn active" data-category="All">All Prompts</button>
+          <button class="filter-btn" data-category="Academic">Academic Concepts</button>
+          <button class="filter-btn" data-category="Exam Prep">Exam Notes</button>
+          <button class="filter-btn" data-category="Problem Solving">Numerical</button>
+          <button class="filter-btn" data-category="Quiz & Recall">Quizzes</button>
+          <button class="filter-btn" data-category="Flashcards">Flashcards</button>
+          <button class="filter-btn" data-category="Research">Research</button>
+          <button class="filter-btn" data-category="Summarization">Summaries</button>
+          <button class="filter-btn" data-category="Python">Python Code</button>
+          <button class="filter-btn" data-category="Career">Career & Emails</button>
+          <button class="filter-btn" data-category="Planning">Planning</button>
+        </div>
+      </div>
+
+      <!-- Grid of 10+ Prompts -->
+      <div class="prompts-grid" id="prompts-container">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- AREA 3: KNOWLEDGE BASE -->
+    <section id="knowledge" class="dashboard-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge">Verified Assets</span>
+          <h2 class="section-title">3. Knowledge Base</h2>
+          <p class="section-desc">Organized repository for course builds, Python fundamentals, and real study documents. Real links only.</p>
+        </div>
+      </div>
+
+      <div class="knowledge-grid" id="knowledge-container">
+        <!-- Rendered dynamically by app.js with real file references and adder -->
+      </div>
+    </section>
+
+    <!-- AREA 4: PROJECTS TRACKER -->
+    <section id="projects" class="dashboard-section">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge">Execution Roadmaps</span>
+          <h2 class="section-title">4. Projects & Builds Tracker</h2>
+          <p class="section-desc">Monitor progress across all 6 core builds. Edit status or destination links in real time.</p>
+        </div>
+        <div>
+          <a href="portfolio.html" class="btn-open-proj">View Portfolio Summary ↗</a>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projects-container">
+        <!-- Rendered dynamically by app.js with Build 4 marked In Progress -->
+      </div>
+    </section>
+
+    <!-- Quick Link Banner to Portfolio Page -->
+    <div style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%); border: 1px solid rgba(139, 92, 246, 0.25); border-radius: var(--radius-lg); padding: 1.75rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.25rem;">
+      <div>
+        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.35rem;">Academic & Career Portfolio Page</h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 650px;">
+          Includes high-level summaries for all Builds 1–6, student milestones, and your active learning pledge for next month's exams and internship targets.
+        </p>
+      </div>
+      <a href="portfolio.html" class="btn-open-link" style="padding: 0.65rem 1.25rem; font-size: 0.88rem;">
+        Open Portfolio Page →
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>My AI Workspace</strong> — Created for IMCA 2nd Year Student (Exams, Python Programming & Career Track)</p>
+    <p style="margin-top: 0.4rem; color: var(--text-dim);">Dark Charcoal Theme • Blue & Violet Accents • Fully Local & Responsive</p>
+  </footer>
+
+  <!-- Toast Notification element -->
+  <div id="app-toast" class="toast"></div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
